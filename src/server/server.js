@@ -10,8 +10,8 @@ app.use(express.static('dist'));
 
 
 // client makes api call to server routes
-app.get('/apicall', (req, res) => {
-    console.log('test request to server');
+app.get('/api/test', (req, res) => {
+    res.json({test: 'test'});
 })
 
 app.listen(8080, () => {
